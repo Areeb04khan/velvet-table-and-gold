@@ -1,0 +1,307 @@
+export type MenuItem = {
+  name: string;
+  price?: number;
+  half?: number;
+  full?: number;
+  special?: boolean;
+};
+
+export type MenuCategory = {
+  id: string;
+  title: string;
+  blurb?: string;
+  items: MenuItem[];
+};
+
+export const menuCategories: MenuCategory[] = [
+  {
+    id: "soups",
+    title: "Soups & Shorbas",
+    items: [
+      { name: "Manchow Soup", price: 99 },
+      { name: "Hot & Sour Soup", price: 99 },
+      { name: "Tomato Soup", price: 109 },
+      { name: "Lemon Coriander Soup", price: 99 },
+      { name: "Creamy Mushroom Soup", price: 109 },
+      { name: "TVT Special Soup", price: 149, special: true },
+    ],
+  },
+  {
+    id: "tandoori",
+    title: "Tandoori & Indian Appetizers",
+    items: [
+      { name: "Hara Bhara Kebab", price: 229 },
+      { name: "Veg Seekh Kebab", price: 249 },
+      { name: "Dahi Ke Kebab / Sholay", price: 249 },
+      { name: "Tandoori Aloo", price: 229 },
+      { name: "Paneer Tikka", price: 299 },
+      { name: "Achari Paneer Tikka", price: 319 },
+      { name: "Malai Paneer Tikka", price: 299 },
+      { name: "Paneer Angara Tikka", price: 299 },
+      { name: "Tandoori Mushroom", price: 299 },
+      { name: "Stuffed Tandoori Mushroom", price: 329 },
+      { name: "TVT Signature Cigar Roll", price: 299, special: true },
+      { name: "Afghani Chaap", price: 249 },
+      { name: "Tandoori Chaap", price: 249 },
+      { name: "Malai Chaap", price: 279 },
+      { name: "Angara Chaap", price: 319 },
+      { name: "Masala Chaap", price: 329 },
+      { name: "Tawa Chaap", price: 339 },
+      { name: "TVT Spcl Lemon Garlic Paneer", price: 359, special: true },
+    ],
+  },
+  {
+    id: "oriental",
+    title: "Oriental Starters",
+    items: [
+      { name: "Veg Manchurian Dry", price: 249 },
+      { name: "Chilli Potato", price: 259 },
+      { name: "Honey Chilli Potato", price: 249 },
+      { name: "Crispy Corn", price: 219 },
+      { name: "Veg Spring Roll", price: 219 },
+      { name: "Chilli Paneer Dry", price: 249 },
+      { name: "Paneer 65", price: 229 },
+      { name: "Chilli Mushroom", price: 249 },
+      { name: "TVT Spcl Crispy Veg", price: 259, special: true },
+    ],
+  },
+  {
+    id: "sizzlers",
+    title: "Signature Sizzlers",
+    blurb: "Served sizzling on a hot plate, straight from the grill.",
+    items: [
+      { name: "Veg Sizzler", price: 349 },
+      { name: "Paneer Sizzler", price: 399 },
+      { name: "Chinese Veg Sizzler", price: 379 },
+    ],
+  },
+  {
+    id: "mains",
+    title: "Paneer & Vegetable Main Course",
+    blurb: "Half / Full portions available.",
+    items: [
+      { name: "Shahi Paneer", half: 199, full: 299 },
+      { name: "Paneer Butter Masala", half: 229, full: 329 },
+      { name: "Kadhai Paneer", half: 229, full: 329 },
+      { name: "Paneer Lababdar", half: 249, full: 349 },
+      { name: "Paneer Tikka Masala", half: 249, full: 369 },
+      { name: "Handi Paneer", half: 229, full: 339 },
+      { name: "Paneer Do Pyaaza", half: 209, full: 319 },
+      { name: "Matar Paneer", half: 189, full: 289 },
+      { name: "Palak Paneer", half: 199, full: 299 },
+      { name: "Paneer Bhurji", half: 219, full: 329 },
+      { name: "Achari Paneer", half: 219, full: 329 },
+      { name: "Khoya Paneer", half: 239, full: 349 },
+      { name: "Angara Chaap Gravy", half: 219, full: 319 },
+      { name: "Masala Chaap Gravy", half: 229, full: 329 },
+      { name: "Tawa Chaap Gravy", half: 229, full: 339 },
+      { name: "TVT Spcl Lemon Garlic Paneer", half: 239, full: 359, special: true },
+      { name: "Mix Veg", half: 179, full: 249 },
+      { name: "Kashmiri Dum Aloo", half: 189, full: 279 },
+      { name: "Malai Kofta", half: 199, full: 299 },
+      { name: "Veg Kofta Curry", half: 189, full: 279 },
+      { name: "Veg Jalfrezi", half: 199, full: 299 },
+      { name: "Mushroom Masala", half: 219, full: 319 },
+      { name: "Mushroom Do Pyaaza", half: 199, full: 299 },
+      { name: "Mushroom Matar", half: 199, full: 299 },
+      { name: "Aloo Gobhi", half: 159, full: 229 },
+      { name: "Bhindi Seasonal Veg", half: 169, full: 239 },
+      { name: "TVT Spcl Pindi Chhole", half: 189, full: 289, special: true },
+    ],
+  },
+  {
+    id: "dal",
+    title: "Dal & Lentils",
+    blurb: "Half / Full portions available.",
+    items: [
+      { name: "Dal Fry", half: 149, full: 199 },
+      { name: "Dal Tadka", half: 159, full: 219 },
+      { name: "Dal Makhani", half: 189, full: 269 },
+    ],
+  },
+  {
+    id: "rice",
+    title: "Rice & Biryani",
+    items: [
+      { name: "Steamed Rice", price: 149 },
+      { name: "Jeera Rice", price: 179 },
+      { name: "Matar Pulao", price: 189 },
+      { name: "Veg Pulao", price: 219 },
+      { name: "TVT Spcl Lemon Rice", price: 229, special: true },
+      { name: "Veg Dum Biryani", price: 249 },
+      { name: "Paneer Biryani", price: 279 },
+      { name: "TVT Spcl Chaap Biryani", price: 299, special: true },
+    ],
+  },
+  {
+    id: "chinese",
+    title: "Chinese Mains",
+    items: [
+      { name: "Veg Hakka Noodles", price: 220 },
+      { name: "Schezwan Noodles", price: 239 },
+    ],
+  },
+  {
+    id: "breads",
+    title: "Indian Breads",
+    items: [
+      { name: "Tandoori Roti", price: 18 },
+      { name: "Butter Tandoori Roti", price: 20 },
+      { name: "Plain Tawa Roti", price: 20 },
+      { name: "Butter Tawa Roti", price: 25 },
+      { name: "Plain Naan", price: 35 },
+      { name: "Butter Naan", price: 45 },
+    ],
+  },
+  {
+    id: "salads",
+    title: "Salads & Accompaniments",
+    items: [
+      { name: "Green Salad", price: 99 },
+      { name: "Cucumber Salad", price: 89 },
+      { name: "Plain Curd", price: 69 },
+      { name: "Boondi Raita", price: 99 },
+      { name: "Cucumber Raita", price: 119 },
+    ],
+  },
+  {
+    id: "pizza",
+    title: "Artisanal Pizza",
+    items: [
+      { name: "Margherita Pizza", price: 179 },
+      { name: "Farmhouse Pizza", price: 249 },
+      { name: "Veg Supreme Pizza", price: 279 },
+      { name: "Cheese Burst Pizza", price: 299 },
+      { name: "Corn & Cheese Pizza", price: 219 },
+      { name: "TVT Spcl Veg Pizza", price: 249, special: true },
+    ],
+  },
+  {
+    id: "pasta",
+    title: "Pasta & Lasagna",
+    items: [
+      { name: "White Sauce Pasta", price: 249 },
+      { name: "Red Sauce Pasta", price: 249 },
+      { name: "Pink Sauce Pasta", price: 269 },
+    ],
+  },
+  {
+    id: "snacks",
+    title: "Snacks & Quick Bites",
+    items: [
+      { name: "French Fries", price: 129 },
+      { name: "Peri Peri Fries", price: 159 },
+      { name: "Veg Grilled Sandwich", price: 139 },
+      { name: "Cheese Sandwich", price: 169 },
+      { name: "Paneer Sandwich", price: 189 },
+      { name: "Veg Crispy Burger", price: 209 },
+      { name: "Paneer Burger", price: 189 },
+      { name: "Cheese Corn Nuggets", price: 199 },
+      { name: "Garlic Bread", price: 149 },
+      { name: "Cheese Garlic Bread", price: 199 },
+      { name: "Veg Momos (Steamed)", price: 149 },
+      { name: "Veg Momos (Fried)", price: 169 },
+      { name: "Paneer Momos", price: 189 },
+      { name: "Fully Loaded Nachos", price: 149 },
+    ],
+  },
+  {
+    id: "breakfast",
+    title: "Breakfast & Brunch",
+    items: [
+      { name: "Aloo Paratha", price: 89 },
+      { name: "Onion Paratha", price: 99 },
+      { name: "Paneer Paratha", price: 109 },
+      { name: "Gobi Paratha", price: 89 },
+      { name: "Pav Bhaji", price: 119 },
+      { name: "Poha", price: 90 },
+      { name: "Chhole Bhature (Kabuli)", price: 129 },
+      { name: "Chhole Bhature (Pindi)", price: 139 },
+      { name: "Butter Toast", price: 29 },
+      { name: "Bun Butter", price: 39 },
+    ],
+  },
+  {
+    id: "shakes",
+    title: "Gourmet Shakes",
+    items: [
+      { name: "Kitkat Shake", price: 179 },
+      { name: "Oreo Shake", price: 179 },
+      { name: "Chocolate Shake", price: 189 },
+      { name: "Choco-Vanilla Shake", price: 179 },
+      { name: "Strawberry Shake", price: 179 },
+      { name: "Pineapple Shake", price: 179 },
+      { name: "Snickers Shake", price: 199 },
+      { name: "Banana Protein Shake", price: 209 },
+      { name: "Chocolate Protein Shake", price: 219 },
+    ],
+  },
+  {
+    id: "mocktails",
+    title: "Craft Mocktails",
+    items: [
+      { name: "Spicy Guava", price: 149 },
+      { name: "Pina Colada", price: 149 },
+      { name: "Cranberry Blossom", price: 139 },
+      { name: "Watermelon Cooler", price: 129 },
+      { name: "Classic Mojito", price: 129 },
+      { name: "Pineapple Delight", price: 139 },
+      { name: "TVT Spcl Jamun-tini", price: 159, special: true },
+      { name: "Orange Zest", price: 119 },
+      { name: "Green Apple Fizz", price: 129 },
+      { name: "Blue Lagoon", price: 119 },
+    ],
+  },
+  {
+    id: "coffee",
+    title: "Coffee & Tea",
+    items: [
+      { name: "Espresso", price: 79 },
+      { name: "Americano", price: 99 },
+      { name: "Cappuccino", price: 129 },
+      { name: "Classic Latte", price: 139 },
+      { name: "Cafe Mocha", price: 159 },
+      { name: "Caramel Latte", price: 159 },
+      { name: "Hazelnut Latte", price: 159 },
+      { name: "Vanilla Latte", price: 149 },
+      { name: "Hot Chocolate", price: 129 },
+      { name: "Masala Chai", half: 39, full: 49 },
+      { name: "Green Tea", price: 59 },
+    ],
+  },
+  {
+    id: "chilled",
+    title: "Chilled Coffee & Iced Tea",
+    items: [
+      { name: "TVT Spcl Cold Coffee", price: 149, special: true },
+      { name: "Classic Cold Coffee", price: 129 },
+      { name: "Cold Coffee with Ice Cream", price: 159 },
+      { name: "Chocolate Frappe", price: 179 },
+      { name: "Vanilla Frappe", price: 169 },
+      { name: "Lemon Iced Tea", price: 99 },
+      { name: "Peach Iced Tea", price: 129 },
+    ],
+  },
+  {
+    id: "desserts",
+    title: "Desserts & Ice Cream",
+    items: [
+      { name: "Gulab Jamun", price: 89 },
+      { name: "Rasmalai", price: 109 },
+      { name: "Moong Dal Halwa", price: 129 },
+      { name: "Vanilla Ice Cream", price: 79 },
+      { name: "Choco-Chips Ice Cream", price: 99 },
+      { name: "Butter Scotch Ice Cream", price: 99 },
+    ],
+  },
+];
+
+export const restaurant = {
+  name: "The Velvet Table",
+  tagline: "Fine Dining & Culinary Artistry",
+  address:
+    "In front of Karbala, near Bus Stop, Bindki, Fatehpur, Uttar Pradesh 212601",
+  mapsUrl: "https://maps.app.goo.gl/GJrpwBzZNZSrHc5y7",
+  mapEmbedUrl:
+    "https://www.google.com/maps?q=The+Velvet+Table+Resto+and+Cafe+Bindki+Fatehpur&output=embed",
+};
