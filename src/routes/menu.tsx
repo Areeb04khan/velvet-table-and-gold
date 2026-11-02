@@ -29,7 +29,7 @@ function formatINR(value: number) {
   return `₹${value}`;
 }
 
-function Price({ half, full }: { half?: number; full?: number }) {
+function Price({ half, full }: { half?: number | undefined; full?: number | undefined }) {
   if (half !== undefined && full !== undefined) {
     return (
       <span className="flex shrink-0 items-center gap-2 font-display text-sm text-gold sm:text-base">
@@ -49,7 +49,7 @@ function Price({ half, full }: { half?: number; full?: number }) {
 }
 
 function MenuPage() {
-  const [activeCategory, setActiveCategory] = useState(menuCategories[0].id);
+  const [activeCategory, setActiveCategory] = useState(menuCategories[0]?.id ?? "");
 
   const scrollTo = (id: string) => {
     setActiveCategory(id);
