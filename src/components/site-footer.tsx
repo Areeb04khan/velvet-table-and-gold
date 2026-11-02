@@ -39,8 +39,8 @@ export function SiteFooter() {
 
         {/* Developer Credit & WhatsApp Button */}
         <div className="mt-4 flex flex-col sm:flex-row items-center gap-4 border-t border-gold/10 pt-8 w-full justify-center">
-          <p className="text-cream/90 text-sm font-medium tracking-wide">
-            Developed by Areeb Khan
+          <p className="text-cream/20 text-sm font-medium tracking-wide">
+            Website Designed & Developed by Areeb Khan
           </p>
           <a
             href="https://wa.me/919580111566"
