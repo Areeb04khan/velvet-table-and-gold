@@ -11,12 +11,12 @@ export const Route = createFileRoute("/menu")({
       {
         name: "description",
         content:
-          "The full menu of The Velvet Table Resto & Cafe, Bindki: soups, tandoori appetizers, paneer mains, biryani, pizza, pasta, shakes, mocktails and desserts — all pure vegetarian.",
+          "The full menu of The Velvet Table Resto & Cafe, : soups, tandoori appetizers, paneer mains, biryani, pizza, pasta, shakes, mocktails and desserts — all pure vegetarian.",
       },
       { property: "og:title", content: "Menu — The Velvet Table Resto & Cafe" },
       {
         property: "og:description",
-        content: "Pure vegetarian fine dining menu from Bindki, Fatehpur.",
+        content: "Pure vegetarian fine dining menu from Fatehpur.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
