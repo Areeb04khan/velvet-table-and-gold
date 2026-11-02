@@ -6,16 +6,16 @@ import { restaurant } from "@/lib/menu";
 export const Route = createFileRoute("/visit")({
   head: () => ({
     meta: [
-      { title: "Visit Us — The Velvet Table Resto & Cafe, Bindki" },
+      { title: "Visit Us — The Velvet Table Resto & Cafe, near Bindki Bus Stop, Fatehpur" },
       {
         name: "description",
         content:
-          "Find The Velvet Table Resto & Cafe in Bindki, Fatehpur, Uttar Pradesh — location, directions and how to reach us.",
+          "Find The Velvet Table Resto & Cafe in Fatehpur, Uttar Pradesh — location, directions and how to reach us.",
       },
       { property: "og:title", content: "Visit Us — The Velvet Table Resto & Cafe" },
       {
         property: "og:description",
-        content: "Location and directions to The Velvet Table in Bindki, Fatehpur.",
+        content: "Location and directions to The Velvet Table in Fatehpur.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
@@ -28,12 +28,12 @@ function VisitPage() {
   return (
     <div className="mx-auto max-w-6xl px-4 pb-16 pt-28 sm:px-6">
       <div className="text-center">
-        <p className="text-[11px] uppercase tracking-[0.35em] text-gold">Bindki · Fatehpur · U.P.</p>
+        <p className="text-[11px] uppercase tracking-[0.35em] text-gold">Fatehpur · U.P.</p>
         <h1 className="mt-3 font-display text-5xl font-semibold text-gold-gradient sm:text-6xl">
           Visit Us
         </h1>
         <p className="mx-auto mt-3 max-w-xl text-sm text-cream/85 sm:text-base">
-          Right on the bus-stop road in Bindki, in front of Karbala — an easy stop for
+          Right near the Bindki bus-stop , in front of Karbala — an easy stop for
           families, travellers and celebration dinners.
         </p>
       </div>
