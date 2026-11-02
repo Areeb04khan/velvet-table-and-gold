@@ -1,9 +1,4 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-
-import counterAsset from "@/assets/IMG20261102163209.jpg.asset.json";
-import hallAsset from "@/assets/IMG20261102163214.jpg.asset.json";
-import wideHallAsset from "@/assets/IMG20261102163218.jpg.asset.json";
-import diningAsset from "@/assets/IMG20261102163220.jpg.asset.json";
 import { restaurant } from "@/lib/menu";
 
 export const Route = createFileRoute("/")({
@@ -54,10 +49,10 @@ const signature = [
 ];
 
 const gallery = [
-  { src: counterAsset.url, alt: "Reception counter with royal murals at The Velvet Table" },
-  { src: hallAsset.url, alt: "Dining hall with rattan lamps and floral decor" },
-  { src: wideHallAsset.url, alt: "Seating area with velvet chairs and mural walls" },
-  { src: diningAsset.url, alt: "Tables set for guests at The Velvet Table" },
+  { src: "/IMG20261102163209.jpg", alt: "Reception counter with royal murals at The Velvet Table" },
+  { src: "/IMG20261102163214.jpg", alt: "Dining hall with rattan lamps and floral decor" },
+  { src: "/IMG20261102163218.jpg", alt: "Seating area with velvet chairs and mural walls" },
+  { src: "/IMG20261102163220.jpg", alt: "Tables set for guests at The Velvet Table" },
 ];
 
 function Index() {
@@ -66,7 +61,7 @@ function Index() {
       {/* Hero */}
       <section className="relative flex min-h-[92vh] items-end overflow-hidden">
         <img
-          src={diningAsset.url}
+          src="/IMG20261102163220.jpg"
           alt="The Velvet Table dining hall"
           className="absolute inset-0 h-full w-full object-cover"
         />
