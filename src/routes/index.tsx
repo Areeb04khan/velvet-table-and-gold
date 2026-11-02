@@ -5,18 +5,18 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       {
-        title: "The Velvet Table Resto & Cafe — Fine Dining in Bindki, Fatehpur",
+        title: "The Velvet Table Resto & Cafe — Fine Dining in  Fatehpur",
       },
       {
         name: "description",
         content:
-          "Pure vegetarian fine dining & cafe in Bindki, Fatehpur. Tandoori kebabs, chaap biryani, artisanal pizza, craft mocktails and more at The Velvet Table.",
+          "Pure vegetarian fine dining & cafe in  Fatehpur. Tandoori kebabs, chaap biryani, artisanal pizza, craft mocktails and more at The Velvet Table.",
       },
       { property: "og:title", content: "The Velvet Table Resto & Cafe" },
       {
         property: "og:description",
         content:
-          "Pure vegetarian fine dining in Bindki, Fatehpur — tandoor, oriental, pizza, shakes and craft mocktails.",
+          "Pure vegetarian fine dining in  Fatehpur — tandoor, oriental, pizza, shakes and craft mocktails.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -68,7 +68,7 @@ function Index() {
         <div className="absolute inset-0 bg-gradient-to-t from-velvet-deep via-velvet-deep/55 to-velvet-deep/25" />
         <div className="relative mx-auto w-full max-w-6xl px-4 pb-16 pt-32 sm:px-6">
           <p className="text-[11px] uppercase tracking-[0.35em] text-gold">
-            Pure Vegetarian · Bindki, Fatehpur
+            Pure Vegetarian ·  Fatehpur
           </p>
           <h1 className="mt-4 max-w-3xl font-display text-5xl font-semibold leading-tight text-gold-gradient sm:text-7xl">
             The Velvet Table
