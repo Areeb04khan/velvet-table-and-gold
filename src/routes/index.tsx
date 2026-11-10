@@ -206,7 +206,7 @@ function Index() {
               >
                 Read Google Reviews
               </a>
-              <a href={https://share.google/k8vwK1kCJ6IivwLgf} 
+              <a href="[https://share.google/k8veKiXCJ61ivmLgf](https://share.google/k8veKiXCJ61ivmLgf)"
                 className="rounded-full border border-gold/50 px-6 py-3 text-xs font-semibold uppercase tracking-[0.2em] text-gold transition-colors hover:bg-gold/10"
               >Reviews</a>
             </div>
