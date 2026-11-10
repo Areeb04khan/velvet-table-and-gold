@@ -6,16 +6,16 @@ import { restaurant } from "@/lib/menu";
 export const Route = createFileRoute("/visit")({
   head: () => ({
     meta: [
-      { title: "Visit Us — The Velvet Table Resto & Cafe, near Bindki Bus Stop, Fatehpur" },
+      { title: "Visit Us — The Velvet Table, Khaleel Nagar Road, Fatehpur" },
       {
         name: "description",
         content:
-          "Find The Velvet Table Resto & Cafe in Fatehpur, Uttar Pradesh — location, directions and how to reach us.",
+          "Find The Velvet Table at Bindki Bus Stop, Khaleel Nagar Road, Fatehpur, Uttar Pradesh 212601.",
       },
       { property: "og:title", content: "Visit Us — The Velvet Table Resto & Cafe" },
       {
         property: "og:description",
-        content: "Location and directions to The Velvet Table in Fatehpur.",
+        content: "The Velvet Table, Bindki Bus Stop, Khaleel Nagar Road, Fatehpur, Uttar Pradesh 212601.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
@@ -33,7 +33,7 @@ function VisitPage() {
           Visit Us
         </h1>
         <p className="mx-auto mt-3 max-w-xl text-sm text-cream/85 sm:text-base">
-          Right near the Bindki bus-stop , in front of Karbala — an easy stop for
+          At Bindki Bus Stop on Khaleel Nagar Road — an easy stop for
           families, travellers and celebration dinners.
         </p>
       </div>

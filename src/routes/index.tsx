@@ -185,7 +185,7 @@ function Index() {
             Reserve your evening at the table
           </h2>
           <p className="mx-auto mt-3 max-w-xl text-sm text-muted-foreground sm:text-base">
-            We're easy to find in Fatehpur — right on the bus-stop road, in front of Karbala.
+            Find us at Bindki Bus Stop on Khaleel Nagar Road, Fatehpur.
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-3">
             <a
