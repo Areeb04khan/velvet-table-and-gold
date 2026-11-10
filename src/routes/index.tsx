@@ -2,7 +2,6 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { restaurant } from "@/lib/menu";
 import { useEffect } from 'react';
 
-
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
@@ -58,6 +57,17 @@ const gallery = [
 ];
 
 function Index() {
+  // Move useEffect to the top of the component, before the return statement
+  useEffect(() => {
+    // Only add the script if it isn't already on the page
+    if (!document.querySelector('script[src="https://elfsightcdn.com/platform.js"]')) {
+      const script = document.createElement("script");
+      script.src = "https://elfsightcdn.com/platform.js";
+      script.async = true;
+      document.body.appendChild(script);
+    }
+  }, []);
+
   return (
     <div>
       {/* Hero */}
@@ -208,16 +218,13 @@ function Index() {
               >
                 Read Google Reviews
               </a>
-                useEffect(() => {
-    // Only add the script if it isn't already on the page
-    if (!document.querySelector('script[src="https://elfsightcdn.com/platform.js"]')) {
-      const script = document.createElement("script");
-      script.src = "https://elfsightcdn.com/platform.js";
-      script.async = true;
-      document.body.appendChild(script);
-    }
-  }, []);
- </div>
+            </div>
+            
+            {/* Added Google Reviews Widget Container */}
+            <div className="w-full max-w-4xl mx-auto mt-10 overflow-hidden rounded-xl border border-gold/20 bg-background/50 p-4">
+              <div className="elfsight-app-db10297a-5252-4da5-8715-aadb5fd5a4ab" data-elfsight-app-lazy></div>
+            </div>
+            
           </div>
 
           <div className="mt-10 grid gap-6 lg:grid-cols-2">
