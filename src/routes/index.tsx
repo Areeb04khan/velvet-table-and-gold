@@ -1,5 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { restaurant } from "@/lib/menu";
+import { useEffect } from 'react';
+
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -206,10 +208,16 @@ function Index() {
               >
                 Read Google Reviews
               </a>
-              <!-- Elfsight Google Reviews | Untitled Google Reviews -->
-<script src="https://elfsightcdn.com/platform.js" async></script>
-<div class="elfsight-app-db10297a-5252-4da5-8715-aadb5fd5a4ab" data-elfsight-app-lazy></div>
-            </div>
+                useEffect(() => {
+    // Only add the script if it isn't already on the page
+    if (!document.querySelector('script[src="https://elfsightcdn.com/platform.js"]')) {
+      const script = document.createElement("script");
+      script.src = "https://elfsightcdn.com/platform.js";
+      script.async = true;
+      document.body.appendChild(script);
+    }
+  }, []);
+ </div>
           </div>
 
           <div className="mt-10 grid gap-6 lg:grid-cols-2">
