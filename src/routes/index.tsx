@@ -206,9 +206,9 @@ function Index() {
               >
                 Read Google Reviews
               </a>
-              <a href="[https://share.google/k8veKiXCJ61ivmLgf](https://share.google/k8veKiXCJ61ivmLgf)"
-                className="rounded-full border border-gold/50 px-6 py-3 text-xs font-semibold uppercase tracking-[0.2em] text-gold transition-colors hover:bg-gold/10"
-              >Reviews</a>
+              <!-- Elfsight Google Reviews | Untitled Google Reviews -->
+<script src="https://elfsightcdn.com/platform.js" async></script>
+<div class="elfsight-app-db10297a-5252-4da5-8715-aadb5fd5a4ab" data-elfsight-app-lazy></div>
             </div>
           </div>
 
