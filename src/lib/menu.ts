@@ -300,8 +300,9 @@ export const restaurant = {
   name: "The Velvet Table",
   tagline: "Fine Dining & Culinary Artistry",
   address:
-    "In front of Karbala, near Bus Stop, Bindki, Fatehpur, Uttar Pradesh 212601",
-  mapsUrl: "https://maps.app.goo.gl/GJrpwBzZNZSrHc5y7",
+    "The Velvet Table, Bindki Bus Stop, Khaleel Nagar Road, Fatehpur, Uttar Pradesh 212601",
+  mapsUrl:
+    "https://www.google.com/maps/search/?api=1&query=The%20Velvet%20Table%2C%20Bindki%20Bus%20Stop%2C%20Khaleel%20Nagar%20Road%2C%20Fatehpur%2C%20Uttar%20Pradesh%20212601",
   mapEmbedUrl:
-    "https://www.google.com/maps?q=The+Velvet+Table+Resto+and+Cafe+Bindki+Fatehpur&output=embed",
+    "https://www.google.com/maps?q=The%20Velvet%20Table%2C%20Bindki%20Bus%20Stop%2C%20Khaleel%20Nagar%20Road%2C%20Fatehpur%2C%20Uttar%20Pradesh%20212601&output=embed",
 };
