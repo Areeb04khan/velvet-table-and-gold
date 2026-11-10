@@ -303,6 +303,9 @@ export const restaurant = {
     "The Velvet Table, Bindki Bus Stop, Khaleel Nagar Road, Fatehpur, Uttar Pradesh 212601",
   mapsUrl:
     "https://www.google.com/maps/search/?api=1&query=The%20Velvet%20Table%2C%20Bindki%20Bus%20Stop%2C%20Khaleel%20Nagar%20Road%2C%20Fatehpur%2C%20Uttar%20Pradesh%20212601",
+  reviewsUrl: "https://maps.app.goo.gl/Si6LxOabUoivA7zv5",
+  directionsUrl:
+    "https://www.google.com/maps/dir/?api=1&destination=The%20Velvet%20Table%2C%20Bindki%20Bus%20Stop%2C%20Khaleel%20Nagar%20Road%2C%20Fatehpur%2C%20Uttar%20Pradesh%20212601",
   mapEmbedUrl:
     "https://www.google.com/maps?q=The%20Velvet%20Table%2C%20Bindki%20Bus%20Stop%2C%20Khaleel%20Nagar%20Road%2C%20Fatehpur%2C%20Uttar%20Pradesh%20212601&output=embed",
 };

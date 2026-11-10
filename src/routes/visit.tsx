@@ -75,12 +75,12 @@ function VisitPage() {
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <a
-              href={restaurant.mapsUrl}
+              href={restaurant.directionsUrl}
               target="_blank"
               rel="noreferrer"
               className="rounded-full bg-primary px-6 py-3 text-center text-xs font-semibold uppercase tracking-[0.2em] text-primary-foreground shadow-gold-glow transition-transform hover:scale-[1.03]"
             >
-              Open in Google Maps
+              Get Directions
             </a>
             <Link
               to="/menu"
@@ -104,6 +104,51 @@ function VisitPage() {
           />
         </div>
       </div>
+
+      <section className="mt-16 border-t border-gold/15 pt-12 text-center" aria-labelledby="reviews-heading">
+        <p className="text-[11px] uppercase tracking-[0.35em] text-gold/80">Guest notes</p>
+        <h2 id="reviews-heading" className="mt-2 font-display text-4xl font-semibold text-cream sm:text-5xl">
+          Google Reviews
+        </h2>
+        <p className="mx-auto mt-3 max-w-xl text-sm text-muted-foreground">
+          Read the latest guest reviews and share your experience on Google.
+        </p>
+        <a
+          href={restaurant.reviewsUrl}
+          target="_blank"
+          rel="noreferrer"
+          className="mt-6 inline-block rounded-full bg-primary px-6 py-3 text-xs font-semibold uppercase tracking-[0.2em] text-primary-foreground shadow-gold-glow transition-transform hover:scale-[1.03]"
+        >
+          Read Reviews on Google
+        </a>
+      </section>
+
+      <section className="mt-16 border-t border-gold/15 pt-12" aria-labelledby="instagram-heading">
+        <div className="mb-8 text-center">
+          <p className="text-[11px] uppercase tracking-[0.35em] text-gold/80">Follow along</p>
+          <h2 id="instagram-heading" className="mt-2 font-display text-4xl font-semibold text-cream sm:text-5xl">
+            The Velvet Table on Instagram
+          </h2>
+          <a
+            href="https://www.instagram.com/the.velvet.table71/"
+            target="_blank"
+            rel="noreferrer"
+            className="mt-3 inline-block text-sm text-gold underline-offset-4 hover:underline"
+          >
+            @the.velvet.table71
+          </a>
+        </div>
+        <div className="mx-auto max-w-3xl overflow-hidden rounded-xl border border-gold/20 bg-background">
+          <iframe
+            title="The Velvet Table Instagram profile"
+            src="https://www.instagram.com/the.velvet.table71/embed"
+            className="h-[680px] w-full"
+            loading="lazy"
+            referrerPolicy="strict-origin-when-cross-origin"
+            allow="encrypted-media; picture-in-picture"
+          />
+        </div>
+      </section>
 
       <div className="mt-10 grid grid-cols-1 gap-4 sm:grid-cols-2">
         <img
