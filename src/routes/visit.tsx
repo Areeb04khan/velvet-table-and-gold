@@ -105,6 +105,24 @@ function VisitPage() {
         </div>
       </div>
 
+      <section className="mt-16 border-t border-gold/15 pt-12 text-center" aria-labelledby="reviews-heading">
+        <p className="text-[11px] uppercase tracking-[0.35em] text-gold/80">Guest notes</p>
+        <h2 id="reviews-heading" className="mt-2 font-display text-4xl font-semibold text-cream sm:text-5xl">
+          Google Reviews
+        </h2>
+        <p className="mx-auto mt-3 max-w-xl text-sm text-muted-foreground">
+          Read the latest guest reviews and share your experience on Google.
+        </p>
+        <a
+          href={restaurant.reviewsUrl}
+          target="_blank"
+          rel="noreferrer"
+          className="mt-6 inline-block rounded-full bg-primary px-6 py-3 text-xs font-semibold uppercase tracking-[0.2em] text-primary-foreground shadow-gold-glow transition-transform hover:scale-[1.03]"
+        >
+          Read Reviews on Google
+        </a>
+      </section>
+
       <section className="mt-16 border-t border-gold/15 pt-12" aria-labelledby="instagram-heading">
         <div className="mb-8 text-center">
           <p className="text-[11px] uppercase tracking-[0.35em] text-gold/80">Follow along</p>
