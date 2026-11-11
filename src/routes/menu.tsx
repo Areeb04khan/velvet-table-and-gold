@@ -2,7 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { useState } from "react";
 
 import diningAsset from "@/assets/IMG20261102163220.jpg.asset.json";
-import { menuCategories } from "@/lib/menu";
+import { menuCategories, restaurant } from "@/lib/menu";
 
 export const Route = createFileRoute("/menu")({
   head: () => ({
