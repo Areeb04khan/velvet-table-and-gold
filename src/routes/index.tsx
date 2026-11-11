@@ -260,7 +260,7 @@ function Index() {
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-3">
             <a
-              href={restaurant.mapsUrl}
+              href={restaurant.directionsUrl}
               target="_blank"
               rel="noreferrer"
               className="rounded-full bg-primary px-7 py-3 text-xs font-semibold uppercase tracking-[0.2em] text-primary-foreground shadow-gold-glow transition-transform hover:scale-[1.03]"
