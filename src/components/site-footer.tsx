@@ -27,6 +27,13 @@ export function SiteFooter() {
         </nav>
         
         <p className="max-w-md text-sm text-muted-foreground">{restaurant.address}</p>
+
+        <a
+          href={`tel:${restaurant.phone}`}
+          className="inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground shadow-gold-glow transition-transform hover:scale-[1.03]"
+        >
+          Call The Velvet Table · {restaurant.phone}
+        </a>
         
         <a
           href={restaurant.mapsUrl}

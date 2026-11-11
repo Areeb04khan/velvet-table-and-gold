@@ -81,6 +81,12 @@ function Index() {
             oriental wok, the pizza oven and the mocktail bar — all under one velvet roof.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
+            <a
+              href={`tel:${restaurant.phone}`}
+              className="rounded-full bg-primary px-7 py-3 text-xs font-semibold uppercase tracking-[0.2em] text-primary-foreground shadow-gold-glow transition-transform hover:scale-[1.03]"
+            >
+              Call {restaurant.phone}
+            </a>
             <Link
               to="/menu"
               className="rounded-full bg-primary px-7 py-3 text-xs font-semibold uppercase tracking-[0.2em] text-primary-foreground shadow-gold-glow transition-transform hover:scale-[1.03]"
@@ -190,6 +196,12 @@ function Index() {
               {restaurant.address}
             </p>
             <div className="mt-6 flex flex-wrap justify-center gap-3">
+              <a
+                href={`tel:${restaurant.phone}`}
+                className="rounded-full bg-primary px-6 py-3 text-xs font-semibold uppercase tracking-[0.2em] text-primary-foreground shadow-gold-glow transition-transform hover:scale-[1.03]"
+              >
+                Call {restaurant.phone}
+              </a>
               <a
                 href={restaurant.directionsUrl}
                 target="_blank"

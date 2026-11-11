@@ -77,6 +77,15 @@ function MenuPage() {
         </div>
       </section>
 
+      <div className="border-b border-gold/15 bg-velvet px-4 py-4 text-center">
+        <a
+          href={`tel:${restaurant.phone}`}
+          className="inline-flex items-center justify-center rounded-full bg-primary px-6 py-3 text-xs font-semibold uppercase tracking-[0.2em] text-primary-foreground shadow-gold-glow transition-transform hover:scale-[1.03]"
+        >
+          Call to order · {restaurant.phone}
+        </a>
+      </div>
+
       {/* Category nav */}
       <nav className="sticky top-16 z-40 border-y border-gold/15 bg-velvet-deep/95 backdrop-blur-md">
         <div className="mx-auto flex max-w-6xl gap-2 overflow-x-auto px-4 py-3 sm:px-6">

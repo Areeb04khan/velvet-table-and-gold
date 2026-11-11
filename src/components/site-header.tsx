@@ -1,4 +1,6 @@
 import { Link, useRouterState } from "@tanstack/react-router";
+import { Phone } from "lucide-react";
+import { restaurant } from "@/lib/menu";
 
 const links = [
   { to: "/", label: "Home" },
@@ -41,6 +43,14 @@ export function SiteHeader() {
             );
           })}
         </nav>
+        <a
+          href={`tel:${restaurant.phone}`}
+          aria-label={`Call The Velvet Table at ${restaurant.phone}`}
+          className="inline-flex h-10 w-10 shrink-0 items-center justify-center gap-2 rounded-full bg-primary text-primary-foreground shadow-gold-glow transition-transform hover:scale-105 sm:w-auto sm:px-4"
+        >
+          <Phone aria-hidden="true" size={17} />
+          <span className="hidden text-xs font-semibold sm:inline">{restaurant.phone}</span>
+        </a>
       </div>
     </header>
   );
