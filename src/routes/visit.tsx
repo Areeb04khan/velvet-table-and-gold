@@ -75,6 +75,12 @@ function VisitPage() {
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <a
+              href={`tel:${restaurant.phone}`}
+              className="rounded-full bg-primary px-6 py-3 text-center text-xs font-semibold uppercase tracking-[0.2em] text-primary-foreground shadow-gold-glow transition-transform hover:scale-[1.03]"
+            >
+              Call {restaurant.phone}
+            </a>
+            <a
               href={restaurant.directionsUrl}
               target="_blank"
               rel="noreferrer"

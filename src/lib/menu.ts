@@ -299,6 +299,7 @@ export const menuCategories: MenuCategory[] = [
 export const restaurant = {
   name: "The Velvet Table",
   tagline: "Fine Dining & Culinary Artistry",
+  phone: "9569412646",
   address:
     "The Velvet Table, Bindki Bus Stop, Khaleel Nagar Road, Fatehpur, Uttar Pradesh 212601",
   mapsUrl:

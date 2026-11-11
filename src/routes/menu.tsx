@@ -2,7 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { useState } from "react";
 
 import diningAsset from "@/assets/IMG20261102163220.jpg.asset.json";
-import { menuCategories } from "@/lib/menu";
+import { menuCategories, restaurant } from "@/lib/menu";
 
 export const Route = createFileRoute("/menu")({
   head: () => ({
@@ -76,6 +76,15 @@ function MenuPage() {
           </p>
         </div>
       </section>
+
+      <div className="border-b border-gold/15 bg-velvet px-4 py-4 text-center">
+        <a
+          href={`tel:${restaurant.phone}`}
+          className="inline-flex items-center justify-center rounded-full bg-primary px-6 py-3 text-xs font-semibold uppercase tracking-[0.2em] text-primary-foreground shadow-gold-glow transition-transform hover:scale-[1.03]"
+        >
+          Call to order · {restaurant.phone}
+        </a>
+      </div>
 
       {/* Category nav */}
       <nav className="sticky top-16 z-40 border-y border-gold/15 bg-velvet-deep/95 backdrop-blur-md">

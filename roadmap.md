@@ -1,0 +1,3 @@
+- [x] Add Google Maps embed, directions, and Google review link to the Visit page; include Instagram profile embed.
+- [x] Add the same location and social links to the home page and verify its display.
+- [x] Add 9569412646 as a prominent call action on the home page, shared header, other pages, and footer.
